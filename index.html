@@ -15,9 +15,9 @@
 <button type="button" onclick="funct()">Click For A Random Fact!</button>
 <p id="Fact">
 <script>
-var Facts
-var Fact = ['You burn more calories sleeping than you do watching TV', 'A lions roar can be heard from five miles away', 'Stop signs used to be yellow', 'The majority of your brain is fat',];
-var Fact = Fact[Math.floor(Math.random()*Fact.length)];
+var Facts = ['You burn more calories sleeping than you do watching TV', 'A lions roar can be heard from five miles away', 'Stop signs used to be yellow', 'The majority of your brain is fat',];
+
 function funct() {
-document.getElementById("Fact").innerHTML = Fact ;}
+  var Fact = Facts[Math.floor(Math.random()*Facts.length)];
+  document.getElementById("Fact").innerHTML = Fact ;}
 </script>
